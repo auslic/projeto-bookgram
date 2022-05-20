@@ -1,0 +1,245 @@
+/*Configurações gerais*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./img/book_bg.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*Cover inicial a esquerda da página*/
+
+.bookgram_cover{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.book_phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.book_phone img{
+    margin-left: 10vh;
+    height: 42rem;    
+}
+
+/*Página de Login a direita da página*/
+
+.bookgram_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+    margin-left: 50vh;
+}
+
+.group{
+    background-color: white;
+    width: 75%;
+    padding: 1.3rem 0;
+    border-radius: 15px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group:nth-child(1){
+    min-width: 19rem;
+}
+
+.group:nth-child(2){
+    margin-top: 3vh;
+    min-width: 19rem;
+}
+
+.bookgram_logo{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    height: 6.5rem;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(81, 41, 41);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2vh;
+}
+
+.perfil img{
+    width: 125px;
+}
+
+.group a{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.group p{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.link_blue{
+    color: blue;
+    font-size: 16px;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 3vh;
+    width: 100%;
+    padding: 1.3rem 0;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.app p{
+    font-size: 16px;
+    margin-bottom: 1.5vh;
+}
+
+.image_apps{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image_apps img{
+    width: 60%;
+    margin: 5px  0px;
+}
+
+/*Mobile*/
+
+@media (max-width: 1450px){
+
+    .bookgram_login{
+        margin-left: 0;
+    }
+
+    .book_phone img{
+        width: 0;
+    }
+    .book_phone{
+        background-image: url(./img/book_phone_mobile1024.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: -10vh;
+        width: 100%;
+    }
+
+    .app{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .bookgram_cover{
+        width: 90%;
+    }
+
+    .bookgram_login{
+        margin-left: 0vh;
+    }
+
+    .book_phone img{
+        width: 0px;
+    }
+
+    .book_phone{
+        background-image: url(./img/book_phone_mobile1024.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 10vh;
+        width: 100%;
+    }
+
+    .app{
+        width: 90%;
+    }
+}
+
+@media (max-width: 820px){
+
+    .bookgram_cover{
+        width: 90%;
+    }
+
+    .bookgram_login{
+        margin-left: 0vh;
+    }
+
+    .book_phone img{
+        width: 0px;
+    }
+
+    .book_phone{
+        background-image: url(./img/book_phone_mobile820.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 10vh;
+        margin-left: 1vh;
+        width: 100%;
+    }
+
+    .app{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px){
+
+    .bookgram_cover{
+        width: 90%;
+    }
+
+    .book_phone {
+        display: none;
+    }
+
+    .bookgram_login{
+        margin: auto;
+        width: 100%;
+    }
+
+    .app{
+        width: 75%;
+    }
+
+    .image_apps img{
+        width: 70%;
+    }
+}
